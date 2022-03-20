@@ -12,6 +12,7 @@
     <modules>
         <module>mini-blog-common</module>
         <module>mini-blog-user</module>
+        <module>mini-blog-admin</module>
     </modules>
 
 
