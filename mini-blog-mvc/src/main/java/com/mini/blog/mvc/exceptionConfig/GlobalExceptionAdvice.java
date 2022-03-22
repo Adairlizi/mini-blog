@@ -1,7 +1,8 @@
-package com.mini.blog.user.config;
+package com.mini.blog.mvc.exceptionConfig;
 
 import com.mini.blog.core.pojo.vo.ResponseVO;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -26,4 +27,17 @@ public class GlobalExceptionAdvice {
         log.error("commerce service has error: [{}]", ex.getMessage(), ex);
         return response;
     }
+
+    @ExceptionHandler(value = NullPointerException.class)
+    public ResponseVO<String> nullPointerException(HttpServletRequest req,NullPointerException ex){
+        ResponseVO<String> response = new ResponseVO<>(
+                "-2","nullPointer error"
+        );
+        response.setData(ex.getMessage());
+        log.error("commerce service has error: [{}]", ex.getMessage(), ex);
+        return response;
+    }
+
+
+
 }

@@ -12,6 +12,7 @@
     <modules>
         <module>mini-blog-common</module>
         <module>mini-blog-user</module>
+        <module>mini-blog-mvc</module>
     </modules>
 
 
@@ -43,6 +44,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
