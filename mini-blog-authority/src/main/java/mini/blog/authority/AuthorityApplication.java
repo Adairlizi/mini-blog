@@ -1,4 +1,4 @@
-package com.mini.blog.mvc;
+package mini.blog.authority;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,9 +6,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class MvcApplication {
+public class AuthorityApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MvcApplication.class,args);
+        SpringApplication.run(AuthorityApplication.class,args);
     }
 }
+

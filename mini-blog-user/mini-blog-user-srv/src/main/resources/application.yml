@@ -1,3 +1,13 @@
 
 server:
-  port: 7001
+  port: 9001
+
+
+spring:
+  application:
+    name: mini-blog-user
+  cloud:
+    nacos:
+      server-addr: http://124.223.166.242:8848
+      discovery:
+        enabled: true

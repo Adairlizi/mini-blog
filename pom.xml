@@ -13,6 +13,8 @@
         <module>mini-blog-common</module>
         <module>mini-blog-user</module>
         <module>mini-blog-mvc</module>
+        <module>mini-blog-authority</module>
+        <module>mini-blog-gateway</module>
     </modules>
 
 

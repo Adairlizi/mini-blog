@@ -1,0 +1,27 @@
+server:
+  port: 9005
+
+
+spring:
+  application:
+    name: mini-blog-authority
+  cloud:
+    nacos:
+      server-addr: http://124.223.166.242:8848
+      discovery:
+        enabled: true
+  datasource:
+    url: jdbc:mysql://124.223.166.242:3306/mini_blog?autoReconnect=true&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 连接池
+    hikari:
+      maximum-pool-size: 8
+      minimum-idle: 4
+      idle-timeout: 30000
+      connection-timeout: 30000
+      max-lifetime: 45000
+      auto-commit: true
+      pool-name: ImoocEcommerceHikariCP

@@ -2,9 +2,7 @@ package com.mini.blog.mvc.exceptionConfig;
 
 import com.mini.blog.core.pojo.vo.ResponseVO;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -15,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
  * @date 2022/3/20 18:58
  */
 @Slf4j
-@RestControllerAdvice
 public class GlobalExceptionAdvice {
 
     @ExceptionHandler(value = Exception.class)

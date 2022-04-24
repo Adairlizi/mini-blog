@@ -2,6 +2,7 @@ package com.mini.blog.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @author Administrator
@@ -9,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @description: TODO
  * @date 2022/3/20 16:39
  */
+@EnableDiscoveryClient
 @SpringBootApplication
 public class UserAppcation {
 
